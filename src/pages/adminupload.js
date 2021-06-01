@@ -6,27 +6,28 @@ const UploadForm = () => {
 	const [error, setError] = useState(null);
 	const [title, setTitle] = useState("");
 	const [desc, setDesc] = useState("");
-	var boo = false;
 
 	useEffect(() => {
-		if (file != null && boo == false) {
+		if (file != null) {
 			var name = file.name;
 			const storageRef = Storage.ref(name);
 			const collectionRef = Firestore.collection("images");
 
 			storageRef.put(file).on(
 				"state_changed",
+				(snap) => {},
 				(err) => {
+					console.log(err);
 					setError(err);
 				},
 				async () => {
 					const url = await storageRef.getDownloadURL();
 					var img = new Image();
 					img.onload = async function () {
+						// for getting the height and width
 						var height = img.height;
 						var width = img.width;
-						console.log(height);
-						console.log(width);
+						// then send it to firestore
 						await collectionRef.add({ name, url, title, desc, height, width });
 					};
 					img.src = url;
@@ -68,7 +69,7 @@ const UploadForm = () => {
 				<input type="file" onChange={HandleChange} />
 			</label>
 			<div className="output">
-				{error && <div className="error">{error}</div>}
+				{/* {error && <div className="error">{error}</div>} */}
 				{file && <div>SUCCESS!</div>}
 				<p>{title}</p>
 				<p>{desc}</p>
