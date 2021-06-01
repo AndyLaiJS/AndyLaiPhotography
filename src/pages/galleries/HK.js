@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { Storage, Firestore } from "../../firebase/config";
 
 import "../../Pages.css";
 
 export default function HK() {
+	const [dbdata, setDBdata] = useState([]);
+	var data = [];
+	useEffect(() => {
+		Firestore.collection("images").onSnapshot((snap) => {
+			data = [];
+			snap.forEach((doc) => {
+				// documents.push({ ...doc.data(), id: doc.id });
+				console.log(doc.data());
+				data.push(doc.data());
+			});
+			setDBdata(data);
+			// setDocs(documents);
+		});
+		// this is a cleanup function that react will run when
+		// a component using the hook unmounts
+	}, []);
+
+	console.log(dbdata);
 	return (
 		<div>
 			<h1> HONG KONG </h1>
@@ -24,7 +43,8 @@ export default function HK() {
 					Next &gt;&gt;
 				</NavLink>
 			</div>
-			<p> hi </p>
+			{/* Photo Galleries starts here */}
+			{dbdata && dbdata.map((data) => <img src={data.url} />)}
 		</div>
 	);
 }
