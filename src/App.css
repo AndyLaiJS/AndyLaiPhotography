@@ -1,3 +1,25 @@
+a:hover {
+	text-decoration: none !important;
+	color: black !important;
+	cursor: pointer !important;
+}
+
+p {
+	margin: 0 !important;
+}
+
+img {
+	padding: 1.5% 2% 0 2%;
+	height: 87vh;
+	width: 100%;
+	object-fit: cover;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+	width: 10% !important;
+}
+
 .App {
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
@@ -5,7 +27,7 @@
 
 .navBar {
 	background-color: white;
-	padding: 2% 2% 1.75% 2%;
+	padding: 1.5% 2% 1.25% 2%;
 	height: 20%;
 	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
@@ -22,9 +44,50 @@
 	font-size: 1.4vh;
 	display: flex;
 	justify-content: space-around;
-	margin: 20px 33% 0px 33%;
+	margin: 15px 33% 0px 33%;
 	flex-wrap: wrap;
+}
+
+.navLink a {
 	color: #a0a0a0;
+}
+
+.footer {
+	margin-top: 1.5%;
+	font-family: "Nunito", sans-serif;
+	letter-spacing: 0.8px;
+	background-color: #f5f5f5;
+	font-weight: 500;
+	padding: 1.75% 2% 2% 2%;
+	text-decoration: none;
+}
+
+.footer a {
+	color: black !important;
+	text-decoration: none;
+}
+
+.fContainer {
+	margin: auto;
+	width: 15%;
+	padding-bottom: 1%;
+}
+
+.icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.icons img {
+	padding: 0% !important;
+	width: 30px !important;
+	height: 30px !important;
+}
+.subheader {
+	letter-spacing: 0.5px !important;
+	margin-top: 0.7%;
+	font-size: 1.2vh;
 }
 
 .nunitor {
@@ -36,6 +99,6 @@
 }
 
 .selected {
-	color: black;
-	text-decoration: underline;
+	color: black !important;
+	text-decoration: underline !important;
 }
