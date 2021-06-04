@@ -9,14 +9,16 @@ p {
 }
 
 img {
-	/* padding: 1.5% 2% 0 2%; */
-	/* padding: 1.5% 0; */
-	height: 87vh;
+	/* height: 120vh; */
 	width: 100%;
 	object-fit: cover;
+	/* padding: 1.5% 2% 0 2%; */
+	/* padding: 1.5% 0; */
 }
 
 .picture {
+	height: 87vh;
+
 	padding: 1.5% 2% 0 2% !important;
 }
 
