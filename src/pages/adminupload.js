@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Storage, Firestore } from "../firebase/config";
+import { Storage, Firestore, timestamp } from "../firebase/config";
 
 const UploadForm = () => {
 	const [file, setFile] = useState(null);
@@ -22,13 +22,22 @@ const UploadForm = () => {
 				},
 				async () => {
 					const url = await storageRef.getDownloadURL();
+					const createdAt = timestamp();
 					var img = new Image();
 					img.onload = async function () {
 						// for getting the height and width
 						var height = img.height;
 						var width = img.width;
 						// then send it to firestore
-						await collectionRef.add({ name, url, title, desc, height, width });
+						await collectionRef.add({
+							name,
+							url,
+							title,
+							desc,
+							height,
+							width,
+							createdAt,
+						});
 					};
 					img.src = url;
 				}

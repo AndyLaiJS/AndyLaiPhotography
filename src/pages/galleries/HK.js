@@ -8,16 +8,18 @@ export default function HK() {
 	const [dbdata, setDBdata] = useState([]);
 	var data = [];
 	useEffect(() => {
-		Firestore.collection("images").onSnapshot((snap) => {
-			data = [];
-			snap.forEach((doc) => {
-				// documents.push({ ...doc.data(), id: doc.id });
-				console.log(doc.data());
-				data.push(doc.data());
+		Firestore.collection("images")
+			.orderBy("createdAt", "desc")
+			.onSnapshot((snap) => {
+				data = [];
+				snap.forEach((doc) => {
+					// documents.push({ ...doc.data(), id: doc.id });
+					console.log(doc.data());
+					data.push(doc.data());
+				});
+				setDBdata(data);
+				// setDocs(documents);
 			});
-			setDBdata(data);
-			// setDocs(documents);
-		});
 	}, []);
 
 	console.log(dbdata);
