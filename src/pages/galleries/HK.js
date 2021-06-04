@@ -8,7 +8,7 @@ export default function HK() {
 	const [dbdata, setDBdata] = useState([]);
 	var data = [];
 	useEffect(() => {
-		Firestore.collection("images")
+		Firestore.collection("hk")
 			.orderBy("createdAt", "desc")
 			.onSnapshot((snap) => {
 				data = [];
@@ -48,9 +48,17 @@ export default function HK() {
 				{dbdata &&
 					dbdata.map((data) =>
 						data.height > data.width ? (
-							<img className="vertical" src={data.url} />
+							<div className="vertical">
+								<img src={data.url} />
+								<div className="i-title">{data.title}</div>
+								<div className="i-desc">{data.desc}</div>
+							</div>
 						) : (
-							<img className="horizontal" src={data.url} />
+							<div className="horizontal">
+								<img src={data.url} />
+								<div className="i-title">{data.title}</div>
+								<div className="i-desc">{data.desc}</div>
+							</div>
 						)
 					)}
 			</div>
