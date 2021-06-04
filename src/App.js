@@ -65,7 +65,7 @@ function App() {
 					</div>
 				</div>
 				<div>
-					Hong Kong | +852 69939498 |{" "}
+					Hong Kong | (+852) 69939498 |{" "}
 					<a href="mailto:andylaijs@gmail.com">andylaijs@gmail.com</a>
 				</div>
 				<div className="subheader">
