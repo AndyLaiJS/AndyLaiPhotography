@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { Storage, Firestore } from "../../firebase/config";
+import { Firestore } from "../../firebase/config";
 
 import "../../Pages.css";
 
@@ -18,8 +18,6 @@ export default function HK() {
 			setDBdata(data);
 			// setDocs(documents);
 		});
-		// this is a cleanup function that react will run when
-		// a component using the hook unmounts
 	}, []);
 
 	console.log(dbdata);
@@ -44,7 +42,16 @@ export default function HK() {
 				</NavLink>
 			</div>
 			{/* Photo Galleries starts here */}
-			{dbdata && dbdata.map((data) => <img src={data.url} />)}
+			<div className="img-grid">
+				{dbdata &&
+					dbdata.map((data) =>
+						data.height > data.width ? (
+							<img className="vertical" src={data.url} />
+						) : (
+							<img className="horizontal" src={data.url} />
+						)
+					)}
+			</div>
 		</div>
 	);
 }
