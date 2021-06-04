@@ -57,9 +57,11 @@ h1 {
 .img-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	padding: 1.5% 2% 0% 2%;
+	grid-column-gap: 2%;
 }
 .vertical {
-	padding: 1.5% 2% 0 2%;
+	/* padding: 1.5% 2% 0 2%; */
 	/* width: 50%; */
 	object-fit: cover;
 }
