@@ -50,13 +50,13 @@ export default function SG() {
 					dbdata.map((data) =>
 						data.height > data.width ? (
 							<div className="vertical">
-								<img src={data.url} />
+								<img src={data.url} alt={data.alt} />
 								<div className="i-title">{data.title}</div>
 								<div className="i-desc">{data.desc}</div>
 							</div>
 						) : (
 							<div className="horizontal">
-								<img src={data.url} />
+								<img src={data.url} alt={data.alt} />
 								<div className="i-title">{data.title}</div>
 								<div className="i-desc">{data.desc}</div>
 							</div>

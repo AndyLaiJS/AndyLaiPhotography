@@ -7,6 +7,7 @@ const UploadForm = () => {
 	const [error, setError] = useState(null);
 	const [title, setTitle] = useState("");
 	const [desc, setDesc] = useState("");
+	const [alt, setAlt] = useState(null);
 
 	useEffect(() => {
 		if (file != null && region != null) {
@@ -38,6 +39,7 @@ const UploadForm = () => {
 							height,
 							width,
 							createdAt,
+							alt,
 						});
 					};
 					img.src = url;
@@ -71,16 +73,27 @@ const UploadForm = () => {
 		setDesc(e.target.value);
 	};
 
+	const handleAlt = (e) => {
+		setAlt(e.target.value);
+	};
+
 	return (
 		<form>
 			<lavel>Region:</lavel>
 			<input type="text" onChange={handleRegion}></input>
+
 			<label>Title:</label>
 			<input type="text" onChange={handleTitle}></input>
 			<br></br>
+
 			<label>Description:</label>
 			<textarea rows="4" cols="50" onChange={handleDesc}></textarea>
 			<br></br>
+
+			<label>alt:</label>
+			<input type="text" onChange={handleAlt}></input>
+			<br></br>
+
 			<label>
 				<input type="file" onChange={HandleChange} />
 			</label>
