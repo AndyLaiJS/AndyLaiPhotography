@@ -39,7 +39,7 @@ h1 {
 	text-align: left;
 	letter-spacing: 1px;
 	font-size: 1.3vh !important;
-	margin-bottom: 2%;
+	/* margin-bottom: 2%; */
 }
 
 .galleryNavi .nav-link {
