@@ -10,7 +10,7 @@ export default function Home() {
 				<img
 					className="picture"
 					src="/photos/Dusk_Hassanil_Bolkiah_Mosque_Lai-01-10-16.jpg"
-					alt="Sultan Hassanil Bolkiah Mosque, Brunei Darussalam"
+					alt="Jame' Asr Hassanil Bolkiah Mosque, the Golden Mosque of Brunei Darussalam"
 					onContextMenu={(e) => e.preventDefault()}
 				/>
 			</Carousel.Item>
@@ -18,7 +18,7 @@ export default function Home() {
 				<img
 					className="picture"
 					src="/photos/OtheroneCitySg.jpg"
-					alt="The Lion City, Singapore"
+					alt="The Lion City, Panoramic view of Singapore from Marina Bay Sands"
 					onContextMenu={(e) => e.preventDefault()}
 				/>
 			</Carousel.Item>
@@ -26,7 +26,7 @@ export default function Home() {
 				<img
 					className="picture"
 					src="/photos/Oriental-Skyline-22-05-2021.jpg"
-					alt="Oriental Skyline, Hong Kong"
+					alt="Victoria Harbour, Hong Kong city skyline"
 					onContextMenu={(e) => e.preventDefault()}
 				/>
 			</Carousel.Item>
