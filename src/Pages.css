@@ -59,6 +59,7 @@ h1 {
 	grid-template-columns: 1fr 1fr;
 	padding: 1.5% 2% 0% 2%;
 	grid-column-gap: 2%;
+	text-align: left;
 }
 .vertical {
 	/* padding: 1.5% 2% 0 2%; */
@@ -67,4 +68,15 @@ h1 {
 }
 .horizontal {
 	grid-column: span 2;
+}
+
+.i-title {
+	font-weight: 600;
+	font-size: 1.5em;
+	padding: 0.35em 0;
+}
+
+.i-desc {
+	margin-bottom: 2%;
+	width: 85%;
 }
