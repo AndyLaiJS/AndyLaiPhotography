@@ -53,3 +53,16 @@ h1 {
 .galleryNavi a:hover {
 	color: black !important;
 }
+
+.img-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.vertical {
+	padding: 1.5% 2% 0 2%;
+	/* width: 50%; */
+	object-fit: cover;
+}
+.horizontal {
+	grid-column: span 2;
+}
