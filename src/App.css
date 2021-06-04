@@ -16,6 +16,11 @@ img {
 	/* padding: 1.5% 0; */
 }
 
+.header {
+	font-size: 6vh;
+	font-weight: 700;
+	padding: 3.5% 3% 0% 3%;
+}
 .picture {
 	height: 87vh;
 
@@ -82,14 +87,14 @@ img {
 
 .icons {
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	justify-content: space-around;
 }
 
 .icons img {
 	padding: 0% !important;
-	width: 30px !important;
-	height: 30px !important;
+	width: 35% !important;
+	/* height: 10% !important; */
 }
 .subheader {
 	letter-spacing: 0.5px !important;
