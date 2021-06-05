@@ -58,7 +58,7 @@ h1 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding: 1.5% 2% 0% 2%;
-	grid-column-gap: 2%;
+	grid-column-gap: 2.75%;
 	text-align: left;
 }
 
@@ -88,14 +88,14 @@ h1 {
 .horizontal .i-desc {
 	font-size: 1.3vh;
 	letter-spacing: 1px;
-	margin-bottom: 2.5%;
+	margin-bottom: 3%;
 	width: 65%;
 }
 
 .vertical .i-desc {
 	font-size: 1.3vh;
 	letter-spacing: 1px;
-	margin-bottom: 5%;
+	margin-bottom: 5.5%;
 	width: 100%;
 }
 
