@@ -18,13 +18,15 @@ export default function Contact() {
 			>
 				The Chinese University of Hong Kong | Shatin, New Territories, Hong Kong
 			</div>
-			<div style={{ fontSize: "1.3vh", letterSpacing: "1px", padding: "0.8%" }}>
+			<div
+				style={{ fontSize: "1.3vh", letterSpacing: "1px", paddingTop: "0.8%" }}
+			>
 				(+852) 69949398 | (+673) 7288098 |{" "}
 				<a href="mailto:andylaijs@gmail.com" style={{ color: "black" }}>
 					andylaijs@gmail.com
 				</a>
 			</div>
-			<hr></hr>
+			<hr style={{ paddingBottom: "0.5%" }}></hr>
 
 			<div className="fContainer" style={{ paddingBottom: "0" }}>
 				<div className="icons">
