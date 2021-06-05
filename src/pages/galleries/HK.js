@@ -6,7 +6,9 @@ import "../../Pages.css";
 
 export default function HK() {
 	const [dbdata, setDBdata] = useState([]);
+	const [dataImg, setDataImg] = useState(null);
 	var data = [];
+
 	useEffect(() => {
 		Firestore.collection("hk")
 			.orderBy("createdAt", "desc")
@@ -14,7 +16,7 @@ export default function HK() {
 				data = [];
 				snap.forEach((doc) => {
 					// documents.push({ ...doc.data(), id: doc.id });
-					console.log(doc.data());
+					// console.log(doc.data());
 					data.push(doc.data());
 				});
 				setDBdata(data);
@@ -22,7 +24,7 @@ export default function HK() {
 			});
 	}, []);
 
-	console.log(dbdata);
+	// console.log(dbdata);
 	return (
 		<div>
 			<h1> HONG KONG </h1>

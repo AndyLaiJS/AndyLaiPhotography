@@ -19,7 +19,7 @@ const UploadForm = () => {
 				"state_changed",
 				(snap) => {},
 				(err) => {
-					console.log(err);
+					// console.log(err);
 					setError(err);
 				},
 				async () => {
