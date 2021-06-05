@@ -86,12 +86,16 @@ h1 {
 }
 
 .horizontal .i-desc {
-	margin-bottom: 2%;
+	font-size: 1.3vh;
+	letter-spacing: 1px;
+	margin-bottom: 2.5%;
 	width: 65%;
 }
 
 .vertical .i-desc {
-	margin-bottom: 2%;
+	font-size: 1.3vh;
+	letter-spacing: 1px;
+	margin-bottom: 5%;
 	width: 100%;
 }
 
