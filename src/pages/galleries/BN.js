@@ -6,6 +6,14 @@ import "../../Pages.css";
 
 export default function BN() {
 	const [dbdata, setDBdata] = useState([]);
+	const [selectedImg, setSelectedImg] = useState(null);
+
+	const hideModal = (e) => {
+		if (e.target.classList.contains("backdrop")) {
+			setSelectedImg(null);
+		}
+	};
+
 	var data = [];
 	useEffect(() => {
 		Firestore.collection("bn")
@@ -14,7 +22,6 @@ export default function BN() {
 				data = [];
 				snap.forEach((doc) => {
 					// documents.push({ ...doc.data(), id: doc.id });
-					console.log(doc.data());
 					data.push(doc.data());
 				});
 				setDBdata(data);
@@ -22,7 +29,6 @@ export default function BN() {
 			});
 	}, []);
 
-	console.log(dbdata);
 	return (
 		<div>
 			<h1> BRUNEI DARUSSALAM </h1>
@@ -49,7 +55,7 @@ export default function BN() {
 				{dbdata &&
 					dbdata.map((data) =>
 						data.height > data.width ? (
-							<div className="vertical">
+							<div className="vertical" key={data.createdAt}>
 								<img
 									src={data.url}
 									alt={data.alt}
@@ -59,7 +65,7 @@ export default function BN() {
 								<div className="i-desc">{data.desc}</div>
 							</div>
 						) : (
-							<div className="horizontal">
+							<div className="horizontal" key={data.createdAt}>
 								<img
 									src={data.url}
 									alt={data.alt}
@@ -71,6 +77,11 @@ export default function BN() {
 						)
 					)}
 			</div>
+			{selectedImg && (
+				<div className="backdrop" onClick={hideModal}>
+					<img src={selectedImg} alt="enlarged pic" />
+				</div>
+			)}
 		</div>
 	);
 }

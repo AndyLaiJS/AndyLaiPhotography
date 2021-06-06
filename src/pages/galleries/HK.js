@@ -6,8 +6,14 @@ import "../../Pages.css";
 
 export default function HK() {
 	const [dbdata, setDBdata] = useState([]);
-	const [dataImg, setDataImg] = useState(null);
+	const [selectedImg, setSelectedImg] = useState(null);
 	var data = [];
+
+	const hideModal = (e) => {
+		if (e.target.classList.contains("backdrop")) {
+			setSelectedImg(null);
+		}
+	};
 
 	useEffect(() => {
 		Firestore.collection("hk")
@@ -50,21 +56,23 @@ export default function HK() {
 				{dbdata &&
 					dbdata.map((data) =>
 						data.height > data.width ? (
-							<div className="vertical">
+							<div className="vertical" key={data.createdAt}>
 								<img
 									src={data.url}
 									alt={data.alt}
 									onContextMenu={(e) => e.preventDefault()}
+									onClick={(e) => setSelectedImg(data.url)}
 								/>
 								<div className="i-title">{data.title}</div>
 								<div className="i-desc">{data.desc}</div>
 							</div>
 						) : (
-							<div className="horizontal">
+							<div className="horizontal" key={data.createdAt}>
 								<img
 									src={data.url}
 									alt={data.alt}
 									onContextMenu={(e) => e.preventDefault()}
+									onClick={(e) => setSelectedImg(data.url)}
 								/>
 								<div className="i-title">{data.title}</div>
 								<div className="i-desc">{data.desc}</div>
@@ -72,6 +80,11 @@ export default function HK() {
 						)
 					)}
 			</div>
+			{selectedImg && (
+				<div className="backdrop" onClick={hideModal}>
+					<img src={selectedImg} alt="enlarged pic" />
+				</div>
+			)}
 		</div>
 	);
 }
