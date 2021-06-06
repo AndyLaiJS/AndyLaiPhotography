@@ -62,7 +62,13 @@ h1 {
 	text-align: left;
 }
 
+.img-grid img {
+	transition: ease-in-out 0.2s;
+}
 .img-grid img:hover {
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.65);
+	transform: scale(1.02);
+	transition: ease-in-out 0.2s;
 	cursor: pointer;
 }
 
@@ -84,9 +90,10 @@ h1 {
 }
 
 .i-title {
-	font-weight: 600;
+	font-weight: 700;
+	letter-spacing: 1px;
 	font-size: 1.5em;
-	padding: 0.35em 0;
+	padding: 0.6em 0;
 }
 
 .horizontal .i-desc {
