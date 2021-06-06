@@ -78,7 +78,11 @@ export default function SG() {
 					)}
 			</div>
 			{selectedImg && (
-				<div className="backdrop" onClick={hideModal}>
+				<div
+					className="backdrop"
+					onClick={hideModal}
+					onContextMenu={(e) => e.preventDefault()}
+				>
 					<img src={selectedImg} alt="enlarged pic" />
 				</div>
 			)}
