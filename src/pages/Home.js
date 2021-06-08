@@ -4,29 +4,49 @@ import Carousel from "react-bootstrap/Carousel";
 import "../Pages.css"; // why does this affect every pages files yea?
 
 export default function Home() {
+	var template = "/photos/";
+	var dtype = ".jpg";
+
+	var l = [];
+	var fpic, spic, tpic;
+	fpic = Math.floor(Math.random() * 7 + 1);
+	l.push(fpic);
+
+	do {
+		spic = Math.floor(Math.random() * 7 + 1);
+	} while (l.includes(spic));
+	l.push(spic);
+
+	do {
+		tpic = Math.floor(Math.random() * 7 + 1);
+	} while (l.includes(tpic));
+	l.push(tpic);
+
+	var src1, src2, src3;
+	src1 = template + fpic + dtype;
+	src2 = template + spic + dtype;
+	src3 = template + tpic + dtype;
+
 	return (
 		<Carousel indicators={false}>
 			<Carousel.Item interval={3000}>
 				<img
 					className="picture"
-					src="/photos/Dusk_Hassanil_Bolkiah_Mosque_Lai-01-10-16.jpg"
-					alt="Jame' Asr Hassanil Bolkiah Mosque, the Golden Mosque of Brunei Darussalam"
+					src={src1}
 					onContextMenu={(e) => e.preventDefault()}
 				/>
 			</Carousel.Item>
 			<Carousel.Item interval={3000}>
 				<img
 					className="picture"
-					src="/photos/OtheroneCitySg.jpg"
-					alt="The Lion City, Panoramic view of Singapore from Marina Bay Sands"
+					src={src2}
 					onContextMenu={(e) => e.preventDefault()}
 				/>
 			</Carousel.Item>
 			<Carousel.Item interval={3000}>
 				<img
 					className="picture"
-					src="/photos/Oriental-Skyline-22-05-2021.jpg"
-					alt="Victoria Harbour, Hong Kong city skyline"
+					src={src3}
 					onContextMenu={(e) => e.preventDefault()}
 				/>
 			</Carousel.Item>
