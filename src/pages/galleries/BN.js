@@ -60,6 +60,7 @@ export default function BN() {
 									src={data.url}
 									alt={data.alt}
 									onContextMenu={(e) => e.preventDefault()}
+									onClick={(e) => setSelectedImg(data.url)}
 								/>
 								<div className="i-title">{data.title}</div>
 								<div className="i-desc">{data.desc}</div>
@@ -70,6 +71,7 @@ export default function BN() {
 									src={data.url}
 									alt={data.alt}
 									onContextMenu={(e) => e.preventDefault()}
+									onClick={(e) => setSelectedImg(data.url)}
 								/>
 								<div className="i-title">{data.title}</div>
 								<div className="i-desc">{data.desc}</div>
