@@ -10,7 +10,7 @@ export default function Galleries() {
 				<NavLink to="/hongkong" exact>
 					<img
 						className="picture"
-						src="/photos/Oriental-Skyline-22-05-2021.jpg"
+						src="/photos/4.jpg"
 						alt="Hong Kong"
 						onContextMenu={(e) => e.preventDefault()}
 					/>
@@ -21,7 +21,7 @@ export default function Galleries() {
 				<NavLink to="/singapore" exact>
 					<img
 						className="picture"
-						src="/photos/OtheroneCitySg.jpg"
+						src="/photos/5.jpg"
 						alt="The Lion City, Singapore"
 						onContextMenu={(e) => e.preventDefault()}
 					/>
@@ -32,7 +32,7 @@ export default function Galleries() {
 				<NavLink to="/brunei" exact>
 					<img
 						className="picture"
-						src="/photos/Dusk_Hassanil_Bolkiah_Mosque_Lai-01-10-16.jpg"
+						src="/photos/2.jpg"
 						alt="Sultan Hassanil Bolkiah Mosque, Brunei Darussalam"
 						onContextMenu={(e) => e.preventDefault()}
 					/>
