@@ -79,6 +79,19 @@ export default function BN() {
 						)
 					)}
 			</div>
+
+			<div className="galleryNavi">
+				<NavLink to="/singapore" exact>
+					&lt;&lt; Previous
+				</NavLink>
+				<NavLink to="/galleries" exact>
+					Back to Galleries
+				</NavLink>
+				<NavLink to="/hongkong" exact>
+					Next &gt;&gt;
+				</NavLink>
+			</div>
+
 			{selectedImg && (
 				<div
 					className="backdrop"

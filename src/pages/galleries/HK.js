@@ -80,6 +80,19 @@ export default function HK() {
 						)
 					)}
 			</div>
+
+			<div className="galleryNavi">
+				<NavLink to="/brunei" exact>
+					&lt;&lt; Previous
+				</NavLink>
+				<NavLink to="/galleries" exact>
+					Back to Galleries
+				</NavLink>
+				<NavLink to="/singapore" exact>
+					Next &gt;&gt;
+				</NavLink>
+			</div>
+
 			{selectedImg && (
 				<div
 					className="backdrop"
