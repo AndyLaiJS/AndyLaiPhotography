@@ -44,7 +44,7 @@ export default function Contact() {
 
 			<img
 				className="picture"
-				src="/photos/Dusk_Hassanil_Bolkiah_Mosque_Lai-01-10-16.jpg"
+				src="/photos/2.jpg"
 				onContextMenu={(e) => e.preventDefault()}
 			/>
 		</div>
