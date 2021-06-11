@@ -114,3 +114,21 @@ img {
 	color: black !important;
 	text-decoration: underline !important;
 }
+
+/* narrow desktop */
+@media screen and (max-width: 2020px) {
+	.navLink {
+		margin: 15px 20% 0 20%;
+	}
+}
+
+/* tablet */
+@media screen and (max-width: 1240px) {
+	.navLink {
+		margin: 15px 15% 0 15%;
+	}
+}
+
+/* mobile */
+@media screen and (max-width: 500px) {
+}
