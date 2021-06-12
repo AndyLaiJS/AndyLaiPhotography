@@ -17,7 +17,7 @@ img {
 }
 
 .header {
-	font-size: 6vh;
+	font-size: 3rem;
 	font-weight: 700;
 	padding: 3.5% 3% 0% 3%;
 }
@@ -45,7 +45,7 @@ img {
 }
 
 .title {
-	font-size: 2.3vh; /* 2.26vh ~ 22px on MBP 13 2018 */
+	font-size: 1.4rem; /* 2.26vh ~ 22px on MBP 13 2018 */
 	text-decoration: none;
 	letter-spacing: 4px;
 	color: black;
@@ -115,20 +115,64 @@ img {
 	text-decoration: underline !important;
 }
 
-/* narrow desktop */
-@media screen and (max-width: 2020px) {
+/* narrower desktop */
+@media screen and (max-width: 1700px) {
 	.navLink {
 		margin: 15px 20% 0 20%;
 	}
 }
 
 /* tablet */
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1366px) {
 	.navLink {
 		margin: 15px 15% 0 15%;
+	}
+
+	.picture {
+		height: 70vh;
+	}
+
+	.horizontal img {
+		height: 70vh !important;
+	}
+
+	.vertical img {
+		height: 90vh !important;
+	}
+
+	.horizontal .i-desc {
+		width: 75% !important;
+	}
+}
+
+/* small tablet */
+@media screen and (max-width: 1024px) {
+	.navLink {
+		margin: 15px 15% 0 15%;
+	}
+
+	.desc {
+		width: 100% !important;
+		padding-right: 8%;
+	}
+
+	.picture {
+		height: 50vh;
+	}
+
+	.horizontal img {
+		height: 50vh !important;
+	}
+
+	.vertical img {
+		height: 70vh !important;
+	}
+
+	.horizontal .i-desc {
+		width: 75% !important;
 	}
 }
 
 /* mobile */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 }
