@@ -19,7 +19,11 @@ export default function Contact() {
 				The Chinese University of Hong Kong | Shatin, New Territories, Hong Kong
 			</div>
 			<div
-				style={{ fontSize: "1.3vh", letterSpacing: "1px", paddingTop: "0.8%" }}
+				style={{
+					fontSize: "0.75rem",
+					letterSpacing: "1px",
+					paddingTop: "0.8%",
+				}}
 			>
 				(+852) 69949398 | (+673) 7288098 |{" "}
 				<a href="mailto:andylaijs@gmail.com" style={{ color: "black" }}>

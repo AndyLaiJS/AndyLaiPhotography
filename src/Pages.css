@@ -1,8 +1,14 @@
 h1 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700 !important;
-	font-size: 5.75vh !important;
+	font-size: 3rem !important;
 	padding: 4%;
+}
+
+@media screen and (max-width: 1700px) {
+	.navLink {
+		margin: 15px 20% 0 20%;
+	}
 }
 
 .overlayImg {
@@ -25,7 +31,7 @@ h1 {
 	width: 70%;
 	text-align: left;
 	letter-spacing: 1px;
-	font-size: 1.3vh !important;
+	font-size: 0.75rem !important;
 	padding-bottom: 5%;
 }
 
@@ -92,21 +98,21 @@ h1 {
 .i-title {
 	font-weight: 700;
 	letter-spacing: 1px;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	padding: 0.75em 0 0.6em 0;
 }
 
 .horizontal .i-desc {
-	font-size: 1.2vh;
+	font-size: 0.75rem;
 	letter-spacing: 1px;
-	margin-bottom: 3%;
+	margin-bottom: 3.5rem;
 	width: 55%;
 }
 
 .vertical .i-desc {
-	font-size: 1.2vh;
+	font-size: 0.75rem;
 	letter-spacing: 1px;
-	margin-bottom: 5.5%;
+	margin-bottom: 3.5rem;
 	width: 100%;
 }
 
