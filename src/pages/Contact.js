@@ -5,7 +5,6 @@ export default function Contact() {
 	return (
 		<div>
 			<div className="header">I'd love to hear from you!</div>
-
 			<hr></hr>
 			<div
 				className="desc"
@@ -32,7 +31,7 @@ export default function Contact() {
 			</div>
 			<hr style={{ paddingBottom: "0.5%" }}></hr>
 
-			<div className="fContainer" style={{ paddingBottom: "0" }}>
+			<div className="fContainer">
 				<div className="icons">
 					<a href="https://www.linkedin.com/in/laijianshin/" target="_blank">
 						<img src="/socialicons/linkedin.png" />
