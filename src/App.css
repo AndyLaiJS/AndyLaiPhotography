@@ -115,7 +115,7 @@ img {
 	text-decoration: underline !important;
 }
 
-/* narrower desktop */
+/* narrow desktop */
 @media screen and (max-width: 1700px) {
 	.navLink {
 		margin: 15px 20% 0 20%;
@@ -129,7 +129,7 @@ img {
 	}
 
 	.picture {
-		height: 70vh;
+		height: 80vh;
 	}
 
 	.horizontal img {
@@ -157,7 +157,7 @@ img {
 	}
 
 	.picture {
-		height: 50vh;
+		height: 85vh;
 	}
 
 	.horizontal img {
