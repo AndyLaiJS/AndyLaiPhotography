@@ -31,21 +31,21 @@ export default function Home() {
 		<Carousel indicators={false}>
 			<Carousel.Item interval={3000}>
 				<img
-					className="picture"
+					className="picture home"
 					src={src1}
 					onContextMenu={(e) => e.preventDefault()}
 				/>
 			</Carousel.Item>
 			<Carousel.Item interval={3000}>
 				<img
-					className="picture"
+					className="picture home"
 					src={src2}
 					onContextMenu={(e) => e.preventDefault()}
 				/>
 			</Carousel.Item>
 			<Carousel.Item interval={3000}>
 				<img
-					className="picture"
+					className="picture home"
 					src={src3}
 					onContextMenu={(e) => e.preventDefault()}
 				/>

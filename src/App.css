@@ -93,8 +93,7 @@ img {
 
 .icons img {
 	padding: 0% !important;
-	width: 25px !important;
-	/* height: 10% !important; */
+	width: 1.75rem !important;
 }
 .subheader {
 	letter-spacing: 0.5px !important;
@@ -175,4 +174,40 @@ img {
 
 /* mobile */
 @media screen and (max-width: 700px) {
+	.navBar {
+		padding: 7.5% 2% 1.25% 2%;
+	}
+	.navLink {
+		margin: 25px 5% 15px 5% !important;
+	}
+
+	.picture {
+		height: 30vh;
+	}
+
+	.home {
+		height: 60vh;
+	}
+	.fContainer {
+		margin: auto;
+		width: 50%;
+		padding: 7.5% 2%;
+	}
+
+	.subheader {
+		margin: 5%;
+		/* margin-top: 2.5%; */
+	}
+
+	.horizontal img {
+		height: 30vh !important;
+	}
+
+	.vertical img {
+		height: 70vh !important;
+	}
+
+	.horizontal .i-desc {
+		width: 100% !important;
+	}
 }

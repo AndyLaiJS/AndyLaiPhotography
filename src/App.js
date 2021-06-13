@@ -64,7 +64,11 @@ function App() {
 						</a>
 					</div>
 				</div>
-				<div>
+				<div
+					style={{
+						fontSize: "1.5vh",
+					}}
+				>
 					Hong Kong | (+852) 69939498 |{" "}
 					<a href="mailto:andylaijs@gmail.com">andylaijs@gmail.com</a>
 				</div>
