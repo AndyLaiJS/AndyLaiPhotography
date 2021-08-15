@@ -51,6 +51,52 @@ const UploadForm = () => {
 
 	const HandleChange = (e) => {
 		let selected = e.target.files[0];
+		// var imgData = null;
+		// // get URL of the img being uploaded
+		// var img = new Image();
+		// var love = "Wisely Natalia";
+		// img.src = URL.createObjectURL(selected);
+		// // once img is loaded, run this function
+		// img.onload = function () {
+		// 	imgData = getBase64Image(img);
+		// 	// console.log(imgData); // imgData is our base64 encoding
+		// 	var length = imgData.length;
+		// 	var imageBytes = new ArrayBuffer(length);
+		// 	var ua = new Uint8Array(imageBytes);
+		// 	for (var i = 0; i < length; i++) {
+		// 		ua[i] = imgData.charCodeAt(i);
+		// 	}
+		// 	console.log(imageBytes);
+		// 	// the amazon stuff after here (hopefully no problems)
+		// };
+
+		// // copy pasted to convert into base64
+		// // var xhr = new XMLHttpRequest();
+		// // xhr.responseType = "blob";
+
+		// // xhr.onload = function () {
+		// // 	var recoveredBlob = xhr.response;
+
+		// // 	var reader = new FileReader();
+
+		// // 	reader.onload = function () {
+		// // 		var blobAsDataUrl = reader.result;
+		// // 		console.log(blobAsDataUrl);
+		// // 	};
+
+		// // 	reader.readAsDataURL(recoveredBlob);
+		// // };
+		// // xhr.open("GET", img); // no idea wats this
+		// // xhr.send(); // no idea wats this
+
+		// // attempt at storing works, but idk where is it even stored
+		// localStorage.setItem("someimgs", img.src);
+		// // history.push("/test");
+		// history.push({
+		// 	pathname: "/test",
+		// 	state: love,
+		// });
+		// // console.log(lol);
 
 		if (selected && types.includes(selected.type)) {
 			setFile(selected);
@@ -77,9 +123,12 @@ const UploadForm = () => {
 		setAlt(e.target.value);
 	};
 
+	const showtxt = (e) => {
+		console.log("REEE");
+	};
 	return (
 		<form>
-			<lavel>Region:</lavel>
+			<label>Region:</label>
 			<input type="text" onChange={handleRegion}></input>
 
 			<label>Title:</label>
@@ -98,7 +147,7 @@ const UploadForm = () => {
 				<input type="file" onChange={HandleChange} />
 			</label>
 			<div className="output">
-				{/* {error && <div className="error">{error}</div>} */}
+				{error && <div className="error">{error}</div>}
 				{file && <div>SUCCESS!</div>}
 				<p>{region}</p>
 				<p>{title}</p>

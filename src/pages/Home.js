@@ -33,6 +33,7 @@ export default function Home() {
 				<img
 					className="picture home"
 					src={src1}
+					alt="carousel 1"
 					onContextMenu={(e) => e.preventDefault()}
 				/>
 			</Carousel.Item>
@@ -40,6 +41,7 @@ export default function Home() {
 				<img
 					className="picture home"
 					src={src2}
+					alt="carousel 2"
 					onContextMenu={(e) => e.preventDefault()}
 				/>
 			</Carousel.Item>
@@ -47,6 +49,7 @@ export default function Home() {
 				<img
 					className="picture home"
 					src={src3}
+					alt="carousel 3"
 					onContextMenu={(e) => e.preventDefault()}
 				/>
 			</Carousel.Item>

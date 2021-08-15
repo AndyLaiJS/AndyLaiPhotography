@@ -53,14 +53,26 @@ function App() {
 			<div className="footer">
 				<div className="fContainer">
 					<div className="icons">
-						<a href="https://www.linkedin.com/in/laijianshin/" target="_blank">
-							<img src="/socialicons/linkedin.png" />
+						<a
+							href="https://www.linkedin.com/in/laijianshin/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img src="/socialicons/linkedin.png" alt="LinkedIn Logo" />
 						</a>
-						<a href="https://www.instagram.com/lai9879/" target="_blank">
-							<img src="/socialicons/instagram.png" />
+						<a
+							href="https://www.instagram.com/lai9879/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img src="/socialicons/instagram.png" alt="Instagram Logo" />
 						</a>
-						<a href="https://github.com/AndyPhoenix9879" target="_blank">
-							<img src="/socialicons/github.png" />
+						<a
+							href="https://github.com/AndyPhoenix9879"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img src="/socialicons/github.png" alt="Github Logo" />
 						</a>
 					</div>
 				</div>
