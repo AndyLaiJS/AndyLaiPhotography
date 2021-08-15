@@ -68,7 +68,7 @@ img {
 	margin-top: 1.5%;
 	font-family: "Nunito", sans-serif;
 	letter-spacing: 0.8px;
-	background-color: #f5f5f5;
+	/* background-color: #f5f5f5; */
 	font-weight: 500;
 	padding: 1.75% 2% 2% 2%;
 	text-decoration: none;
@@ -92,6 +92,7 @@ img {
 }
 
 .icons img {
+	filter: brightness(0%);
 	padding: 0% !important;
 	width: 1.75rem !important;
 }
@@ -174,6 +175,10 @@ img {
 
 /* mobile */
 @media screen and (max-width: 700px) {
+	h1 {
+		padding: 15% 0 !important;
+		padding-bottom: 12% !important;
+	}
 	.navBar {
 		padding: 7.5% 2% 1.25% 2%;
 	}
