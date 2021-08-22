@@ -7,10 +7,10 @@ export default function Galleries() {
 		<div>
 			{/* <BrowserRouter> */}
 			<div className="overlayImg">
-				<NavLink to="/hongkong" exact>
+				<NavLink to="/AndyLaiPhotography/hongkong" exact>
 					<img
 						className="picture"
-						src="/photos/4.jpg"
+						src="/AndyLaiPhotography/photos/4.jpg"
 						alt="Hong Kong"
 						onContextMenu={(e) => e.preventDefault()}
 					/>
@@ -18,10 +18,10 @@ export default function Galleries() {
 				</NavLink>
 			</div>
 			<div className="overlayImg">
-				<NavLink to="/singapore" exact>
+				<NavLink to="/AndyLaiPhotography/singapore" exact>
 					<img
 						className="picture"
-						src="/photos/5.jpg"
+						src="/AndyLaiPhotography/photos/5.jpg"
 						alt="The Lion City, Singapore"
 						onContextMenu={(e) => e.preventDefault()}
 					/>
@@ -29,10 +29,10 @@ export default function Galleries() {
 				</NavLink>
 			</div>
 			<div className="overlayImg">
-				<NavLink to="/brunei" exact>
+				<NavLink to="/AndyLaiPhotography/brunei" exact>
 					<img
 						className="picture"
-						src="/photos/2.jpg"
+						src="/AndyLaiPhotography/photos/2.jpg"
 						alt="Sultan Hassanil Bolkiah Mosque, Brunei Darussalam"
 						onContextMenu={(e) => e.preventDefault()}
 					/>

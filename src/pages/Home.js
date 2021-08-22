@@ -4,7 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 import "../Pages.css"; // why does this affect every pages files yea?
 
 export default function Home() {
-	var template = "/photos/";
+	var template = "/AndyLaiPhotography/photos/"; // Github Pages requires the repo name in front. Why? idk
 	var dtype = ".jpg";
 
 	var l = [];

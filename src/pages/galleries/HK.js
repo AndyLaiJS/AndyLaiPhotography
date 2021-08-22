@@ -41,13 +41,13 @@ export default function HK() {
 				food and also a unique cultural experience as being Asia’s World City.{" "}
 			</p>
 			<div className="galleryNavi">
-				<NavLink to="/brunei" exact>
+				<NavLink to="/AndyLaiPhotography/brunei" exact>
 					&lt;&lt; Previous
 				</NavLink>
-				<NavLink to="/galleries" exact>
+				<NavLink to="/AndyLaiPhotography/galleries" exact>
 					Back to Galleries
 				</NavLink>
-				<NavLink to="/singapore" exact>
+				<NavLink to="/AndyLaiPhotography/singapore" exact>
 					Next &gt;&gt;
 				</NavLink>
 			</div>
@@ -82,13 +82,13 @@ export default function HK() {
 			</div>
 
 			<div className="galleryNavi">
-				<NavLink to="/brunei" exact>
+				<NavLink to="/AndyLaiPhotography/brunei" exact>
 					&lt;&lt; Previous
 				</NavLink>
-				<NavLink to="/galleries" exact>
+				<NavLink to="/AndyLaiPhotography/galleries" exact>
 					Back to Galleries
 				</NavLink>
-				<NavLink to="/singapore" exact>
+				<NavLink to="/AndyLaiPhotography/singapore" exact>
 					Next &gt;&gt;
 				</NavLink>
 			</div>

@@ -19,34 +19,62 @@ function App() {
 		<div className="App">
 			<BrowserRouter>
 				<div className="navBar">
-					<NavLink to="/" exact className="title fahkwang">
+					<NavLink to="/AndyLaiPhotography" exact className="title fahkwang">
 						ANDY LAI PHOTOGRAPHY
 					</NavLink>
 					<div className="navLink">
-						<NavLink to="/" exact activeClassName="selected">
+						<NavLink to="/AndyLaiPhotography" exact activeClassName="selected">
 							Home
 						</NavLink>
-						<NavLink to="/galleries" exact activeClassName="selected">
+						<NavLink
+							to="/AndyLaiPhotography/galleries"
+							exact
+							activeClassName="selected"
+						>
 							Galleries
 						</NavLink>
-						<NavLink to="/about" exact activeClassName="selected">
+						<NavLink
+							to="/AndyLaiPhotography/about"
+							exact
+							activeClassName="selected"
+						>
 							About
 						</NavLink>
-						<NavLink to="/contact" exact activeClassName="selected">
+						<NavLink
+							to="/AndyLaiPhotography/contact"
+							exact
+							activeClassName="selected"
+						>
 							Contact
 						</NavLink>
 					</div>
 				</div>
 				<Switch>
-					<Route component={Home} path="/" exact />
-					<Route component={Galleries} path="/galleries" exact />
-					<Route component={About} path="/about" exact />
-					<Route component={Contact} path="/contact" exact />
+					<Route component={Home} path="/AndyLaiPhotography" exact />
+					<Route
+						component={Galleries}
+						path="/AndyLaiPhotography/galleries"
+						exact
+					/>
+					<Route component={About} path="/AndyLaiPhotography/about" exact />
+					<Route component={Contact} path="/AndyLaiPhotography/contact" exact />
 					{/* Apparently EVERY part of your routing activity should just reside here.. */}
-					<Route component={HongKong} path="/hongkong" exact />
-					<Route component={Singapore} path="/singapore" exact />
-					<Route component={Brunei} path="/brunei" exact />
-					<Route component={upload} path="/adminupload" exact />
+					<Route
+						component={HongKong}
+						path="/AndyLaiPhotography/hongkong"
+						exact
+					/>
+					<Route
+						component={Singapore}
+						path="/AndyLaiPhotography/singapore"
+						exact
+					/>
+					<Route component={Brunei} path="/AndyLaiPhotography/brunei" exact />
+					<Route
+						component={upload}
+						path="/AndyLaiPhotography/adminupload"
+						exact
+					/>
 				</Switch>
 			</BrowserRouter>
 
@@ -58,21 +86,30 @@ function App() {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<img src="/socialicons/linkedin.png" alt="LinkedIn Logo" />
+							<img
+								src="/AndyLaiPhotography/socialIcons/linkedin.png"
+								alt="LinkedIn Logo"
+							/>
 						</a>
 						<a
 							href="https://www.instagram.com/lai9879/"
 							target="_blank"
 							rel="noreferrer"
 						>
-							<img src="/socialicons/instagram.png" alt="Instagram Logo" />
+							<img
+								src="/AndyLaiPhotography/socialIcons/instagram.png"
+								alt="Instagram Logo"
+							/>
 						</a>
 						<a
 							href="https://github.com/AndyPhoenix9879"
 							target="_blank"
 							rel="noreferrer"
 						>
-							<img src="/socialicons/github.png" alt="Github Logo" />
+							<img
+								src="/AndyLaiPhotography/socialIcons/github.png"
+								alt="Github Logo"
+							/>
 						</a>
 					</div>
 				</div>

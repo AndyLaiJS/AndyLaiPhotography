@@ -40,13 +40,13 @@ export default function SG() {
 				East Asia!{" "}
 			</p>
 			<div className="galleryNavi">
-				<NavLink to="/hongkong" exact>
+				<NavLink to="/AndyLaiPhotography/hongkong" exact>
 					&lt;&lt; Previous
 				</NavLink>
-				<NavLink to="/galleries" exact>
+				<NavLink to="/AndyLaiPhotography/galleries" exact>
 					Back to Galleries
 				</NavLink>
-				<NavLink to="/brunei" exact>
+				<NavLink to="/AndyLaiPhotography/brunei" exact>
 					Next &gt;&gt;
 				</NavLink>
 			</div>
@@ -81,13 +81,13 @@ export default function SG() {
 			</div>
 
 			<div className="galleryNavi">
-				<NavLink to="/hongkong" exact>
+				<NavLink to="/AndyLaiPhotography/hongkong" exact>
 					&lt;&lt; Previous
 				</NavLink>
-				<NavLink to="/galleries" exact>
+				<NavLink to="/AndyLaiPhotography/galleries" exact>
 					Back to Galleries
 				</NavLink>
-				<NavLink to="/brunei" exact>
+				<NavLink to="/AndyLaiPhotography/brunei" exact>
 					Next &gt;&gt;
 				</NavLink>
 			</div>

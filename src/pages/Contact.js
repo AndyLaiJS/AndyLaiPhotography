@@ -38,28 +38,37 @@ export default function Contact() {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<img src="/socialicons/linkedin.png" alt="LinkedIn Logo" />
+						<img
+							src="/AndyLaiPhotography/socialIcons/linkedin.png"
+							alt="LinkedIn Logo"
+						/>
 					</a>
 					<a
 						href="https://www.instagram.com/lai9879/"
 						target="_blank"
 						rel="noreferrer"
 					>
-						<img src="/socialicons/instagram.png" alt="Instagram Logo" />
+						<img
+							src="/AndyLaiPhotography/socialIcons/instagram.png"
+							alt="Instagram Logo"
+						/>
 					</a>
 					<a
 						href="https://github.com/AndyPhoenix9879"
 						target="_blank"
 						rel="noreferrer"
 					>
-						<img src="/socialicons/github.png" alt="Github Logo" />
+						<img
+							src="/AndyLaiPhotography/socialIcons/github.png"
+							alt="Github Logo"
+						/>
 					</a>
 				</div>
 			</div>
 
 			<img
 				className="picture"
-				src="/photos/2.jpg"
+				src="/AndyLaiPhotography/photos/2.jpg"
 				alt="Jame'Asr Hassanil Bolkiah Mosque, Brunei"
 				onContextMenu={(e) => e.preventDefault()}
 			/>

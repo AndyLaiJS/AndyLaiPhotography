@@ -40,13 +40,13 @@ export default function BN() {
 				tropical paradise.{" "}
 			</p>
 			<div className="galleryNavi">
-				<NavLink to="/singapore" exact>
+				<NavLink to="/AndyLaiPhotography/singapore" exact>
 					&lt;&lt; Previous
 				</NavLink>
-				<NavLink to="/galleries" exact>
+				<NavLink to="/AndyLaiPhotography/galleries" exact>
 					Back to Galleries
 				</NavLink>
-				<NavLink to="/hongkong" exact>
+				<NavLink to="/AndyLaiPhotography/hongkong" exact>
 					Next &gt;&gt;
 				</NavLink>
 			</div>
@@ -81,13 +81,13 @@ export default function BN() {
 			</div>
 
 			<div className="galleryNavi">
-				<NavLink to="/singapore" exact>
+				<NavLink to="/AndyLaiPhotography/singapore" exact>
 					&lt;&lt; Previous
 				</NavLink>
-				<NavLink to="/galleries" exact>
+				<NavLink to="/AndyLaiPhotography/galleries" exact>
 					Back to Galleries
 				</NavLink>
-				<NavLink to="/hongkong" exact>
+				<NavLink to="/AndyLaiPhotography/hongkong" exact>
 					Next &gt;&gt;
 				</NavLink>
 			</div>
