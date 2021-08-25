@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/AndyLaiPhotography/static/css/main.9b55fe98.chunk.css",
+    "main.css": "/AndyLaiPhotography/static/css/main.8996b940.chunk.css",
     "main.js": "/AndyLaiPhotography/static/js/main.d2b0e297.chunk.js",
     "main.js.map": "/AndyLaiPhotography/static/js/main.d2b0e297.chunk.js.map",
     "runtime-main.js": "/AndyLaiPhotography/static/js/runtime-main.38505c22.js",
@@ -10,14 +10,14 @@
     "static/js/2.a58493df.chunk.js.map": "/AndyLaiPhotography/static/js/2.a58493df.chunk.js.map",
     "index.html": "/AndyLaiPhotography/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/AndyLaiPhotography/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.9b55fe98.chunk.css.map": "/AndyLaiPhotography/static/css/main.9b55fe98.chunk.css.map",
+    "static/css/main.8996b940.chunk.css.map": "/AndyLaiPhotography/static/css/main.8996b940.chunk.css.map",
     "static/js/2.a58493df.chunk.js.LICENSE.txt": "/AndyLaiPhotography/static/js/2.a58493df.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.38505c22.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.a58493df.chunk.js",
-    "static/css/main.9b55fe98.chunk.css",
+    "static/css/main.8996b940.chunk.css",
     "static/js/main.d2b0e297.chunk.js"
   ]
 }
