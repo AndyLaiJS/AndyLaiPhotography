@@ -4,12 +4,7 @@ export default function About() {
 	return (
 		<div>
 			<h1>About Me</h1>
-			<p
-				className="desc"
-				style={{
-					paddingLeft: "20%",
-				}}
-			>
+			<p className="desc abt">
 				Hello!
 				<br></br>
 				<br></br>
