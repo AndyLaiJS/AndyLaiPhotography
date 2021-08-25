@@ -4,6 +4,12 @@ a:hover {
 	cursor: pointer !important;
 }
 
+.navLink a:focus {
+	text-decoration: underline !important;
+	color: black !important;
+	cursor: pointer !important;
+}
+
 p {
 	margin: 0 !important;
 }
